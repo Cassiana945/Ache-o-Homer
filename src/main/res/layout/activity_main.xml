@@ -4,12 +4,76 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/fundo_inicio"
     tools:context=".activities.MainActivity">
 
     <TextView
+        android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-         />
+        android:layout_marginTop="420dp"
+        android:text="@string/app_name"
+        android:fontFamily="@font/simpsonfont"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#FFD91E"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="15" />
+
+    <ImageView
+        android:id="@+id/iniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iniciar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="19dp"
+        android:layout_below="@id/titulo" />
+
+    <ImageView
+        android:id="@+id/historico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/historico"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iniciar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="recorde: "
+            android:textColor="#FFD91E"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"
+            android:fontFamily="@font/mochiy_pop_one"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/pontos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFD91E"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="15"
+            android:fontFamily="@font/mochiy_pop_one"
+            android:textSize="25sp" />
+    </LinearLayout>
+
 
 </RelativeLayout>
