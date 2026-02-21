@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:background="#FFFFFF"
+    tools:context=".activities.HistoricoActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="histórico"
+        android:fontFamily="@font/mochiy_pop_one"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#FFD91E"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="15" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/titulo"
+        android:layout_margin="20dp" />
+
+    <ImageView
+        android:id="@+id/voltar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/recycler"
+        android:src="@drawable/voltar"/>
+
+</RelativeLayout>
